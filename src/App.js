@@ -65,8 +65,11 @@ function App() {
     <h1 className="title">Just Do It</h1>
 <div className="column">
     <div className="addTask">
-        {/*By adding the value value={newtask} it clears the input search everytime we search*/}
-        <input className="inputTask" value={newTask} onChange={handleChange}/>
+        {/*By adding the value={newtask} it clears the input search everytime we search also the onkeydown makes it so you dont have to click the button*/}
+        <input className="inputTask" value={newTask} onChange={handleChange} onKeyDown={(event) => {
+        if (event.key === 'Enter'){
+            addTask();
+        }}}/>
         <button className="buttonForAddTask" onClick={addTask} >Add Task</button>
     </div>
 
