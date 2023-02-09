@@ -1,0 +1,57 @@
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+
+}
+
+.task{
+    display: flex;
+    background-color: lightgray;
+    margin-top: 1rem;
+}
+
+.inputTask{
+    background-color: aliceblue;
+}
+
+.list {
+    float: right;
+    position: relative;
+    margin-right: 15rem;
+    width: 15rem;
+}
+
+.buttonForTask {
+    margin-right: 4px;
+    background-color: ghostwhite;
+    border-radius: 5px;
+}
+
+.buttonContainer {
+    float: right;
+    margin-top: 28px;
+    height: 3vh;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonForAddTask {
+    margin-left: 5px;
+    background-color: ghostwhite;
+    border-radius: 5px;
+
+
+}
